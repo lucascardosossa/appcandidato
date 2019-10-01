@@ -1,0 +1,32 @@
+<div class="example-container">
+        <mat-card>
+            <mat-card-title>
+                <h3>Nova Sugestão</h3>
+            </mat-card-title>
+            <mat-card-content>
+    
+                <form >
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Categoria</mat-label>
+                        <select matNativeControl required>
+                            <option value="volvo">Saúde</option>
+                            <option value="saab">Segurança</option>
+                            <option value="mercedes">Educação</option>
+                        </select>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input placeholder="Titulo" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Descrição"></textarea>
+                    </mat-form-field>
+                    <div class="example-full-width">
+                            <input placeholder="Imagem" type="file">
+                    </div>
+                    
+                    
+                    <button class="btn" mat-raised-button color="primary">CADASTRAR</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>

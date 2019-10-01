@@ -1,0 +1,26 @@
+<div class="example-container">
+    <mat-card>
+        <mat-card-title>
+            <h3>Envie sua sugestão para cidade de Alagoinhas</h3>
+        </mat-card-title>
+        <mat-card-content>
+            <p>Deseja se identificar?</p>
+
+            <button class="btn" (click)="showSugestao()" mat-raised-button color="warn">NAO</button>
+            <button class="btn" (click)="seIdentifica = true" mat-raised-button color="primary">SIM</button>
+
+            <form *ngIf="seIdentifica">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Nome">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="CEP">
+                </mat-form-field>
+                <button class="btn" (click)="showSugestao()" mat-raised-button color="primary">CADASTRAR</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
